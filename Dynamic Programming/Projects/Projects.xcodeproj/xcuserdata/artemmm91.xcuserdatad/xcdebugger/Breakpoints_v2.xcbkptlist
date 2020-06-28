@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8D9DC3C7-D6BE-4905-B64C-D88A6BA9D6CD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "291ACA49-8C98-4FBC-9247-2F503D6DA2FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Projects/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "main()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "291ACA49-8C98-4FBC-9247-2F503D6DA2FB - 899afa49d44ccc85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Projects"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemmm91/Desktop/All/Problems/CSES%20Problems/Dynamic%20Programming/Projects/Projects/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "222">
+               </Location>
+               <Location
+                  uuid = "291ACA49-8C98-4FBC-9247-2F503D6DA2FB - 899afa49d44ccc85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Projects"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemmm91/Desktop/All/Problems/CSES%20Problems/Dynamic%20Programming/Projects/Projects/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "229">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
