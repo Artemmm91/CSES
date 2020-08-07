@@ -1,31 +1,61 @@
 #include <iostream>
-#include <set>
+#include <algorithm>
 using namespace std;
+#define ll long long
+
+ll tree[525000], s;
+
+ll p2(ll x){
+    ll k = 1;
+    while(k < x){
+        k *= 2;
+    }
+    return k;
+}
+
+void upd(ll k, ll x){
+    tree[k] += x;
+    k /= 2;
+    while(k >= 1){
+        tree[k] = max(tree[2*k], tree[2*k + 1]);
+        k /= 2;
+    }
+}
+
+
+ll find(ll x){
+    ll k = 1;
+    while(k < 2*s){
+        if(tree[k] < x) return -1;
+        if(k >= s) return k;
+        if(tree[2*k] >= x){
+            k = 2 * k;
+        }
+        else{
+            k = 2 * k + 1;
+        }
+    }
+    return -1;
+}
 
 int main() {
-    int n, m, G[200000], H[200000];
-    pair<int, int> p;
-    set<pair<int, int>> s;
-    set<pair<int, int>> :: iterator it;
+    ll n, m, a, b;
     cin >> n >> m;
-    for(int i = 0; i < n; i++){
-        cin >> H[i];
-        s.insert({H[i], i});
+    s = p2(n);
+    for(ll i = 0; i < n; i++){
+        cin >> a;
+        upd(i + s, a);
     }
-    for(int i = 0; i < m; i++){
-        cin >> G[i];
-        it = s.lower_bound({G[i], -1});
-        if(it == s.end()){
+    for(ll i = 0; i < m; i++){
+        cin >> a;
+        b = find(a);
+        if(b == -1){
             cout << 0 << endl;
         }
         else{
-            p = *it;
-            cout << p.second + 1 << endl;
-            p.first -= G[i];
-            s.erase(it);
-            s.insert(p);
+            cout << b - s + 1 << endl;
+            upd(b, -a);
         }
     }
-    
     return 0;
 }
